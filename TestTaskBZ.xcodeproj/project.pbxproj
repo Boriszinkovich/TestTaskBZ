@@ -7,15 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B4E01C6E13A0EEA2EBC68CA9 /* libPods-TestTaskBZ.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C56F797071631252F104FEAE /* libPods-TestTaskBZ.a */; };
 		CE02FAE81C59278C0014B3AA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE02FAE71C59278C0014B3AA /* main.m */; };
-		CE02FAEB1C59278C0014B3AA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE02FAEA1C59278C0014B3AA /* AppDelegate.m */; };
-		CE02FAEE1C59278C0014B3AA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE02FAED1C59278C0014B3AA /* ViewController.m */; };
-		CE02FAF11C59278C0014B3AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE02FAEF1C59278C0014B3AA /* Main.storyboard */; };
+		CE02FAEB1C59278C0014B3AA /* BZAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE02FAEA1C59278C0014B3AA /* BZAppDelegate.m */; };
+		CE02FAEE1C59278C0014B3AA /* BZMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE02FAED1C59278C0014B3AA /* BZMainViewController.m */; };
 		CE02FAF41C59278C0014B3AA /* TestTaskBZ.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE02FAF21C59278C0014B3AA /* TestTaskBZ.xcdatamodeld */; };
 		CE02FAF61C59278C0014B3AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE02FAF51C59278C0014B3AA /* Assets.xcassets */; };
-		CE02FAF91C59278C0014B3AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE02FAF71C59278C0014B3AA /* LaunchScreen.storyboard */; };
 		CE02FB041C59278C0014B3AA /* TestTaskBZTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE02FB031C59278C0014B3AA /* TestTaskBZTests.m */; };
 		CE02FB0F1C59278C0014B3AA /* TestTaskBZUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE02FB0E1C59278C0014B3AA /* TestTaskBZUITests.m */; };
+		CE02FB3F1C593EE10014B3AA /* BZCategory+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = CE02FB381C593EE10014B3AA /* BZCategory+CoreDataProperties.m */; };
+		CE02FB401C593EE10014B3AA /* BZCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = CE02FB3A1C593EE10014B3AA /* BZCategory.m */; };
+		CE02FB421C593EE10014B3AA /* BZQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = CE02FB3E1C593EE10014B3AA /* BZQuestion.m */; };
+		CE02FB461C59625A0014B3AA /* TestTaskBZ.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = CE02FB451C59625A0014B3AA /* TestTaskBZ.sqlite */; };
+		CE0642341C5E1F5300611B4F /* BZUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0642331C5E1F5300611B4F /* BZUtils.m */; };
+		CE83B5BD1C5CB799008A798E /* BZTableHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = CE83B5BC1C5CB799008A798E /* BZTableHeader.m */; };
+		CE83B5C31C5D5EEA008A798E /* BZQuestion+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = CE83B5C21C5D5EEA008A798E /* BZQuestion+CoreDataProperties.m */; };
+		CEBE8DF21C5A79C800130D8C /* BZMenuCellCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBE8DF11C5A79C800130D8C /* BZMenuCellCollectionViewCell.m */; };
+		CEBE8DF51C5ABB2B00130D8C /* BZTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBE8DF41C5ABB2B00130D8C /* BZTableCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,16 +44,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2EEF423A0A86E4B56175DA6D /* Pods-TestTaskBZ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestTaskBZ.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestTaskBZ/Pods-TestTaskBZ.release.xcconfig"; sourceTree = "<group>"; };
+		5821AFB1D5AC421E2B8741AA /* Pods-TestTaskBZ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestTaskBZ.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestTaskBZ/Pods-TestTaskBZ.debug.xcconfig"; sourceTree = "<group>"; };
+		C56F797071631252F104FEAE /* libPods-TestTaskBZ.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestTaskBZ.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE02FAE31C59278C0014B3AA /* TestTaskBZ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestTaskBZ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE02FAE71C59278C0014B3AA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		CE02FAE91C59278C0014B3AA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		CE02FAEA1C59278C0014B3AA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		CE02FAEC1C59278C0014B3AA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		CE02FAED1C59278C0014B3AA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		CE02FAF01C59278C0014B3AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CE02FAE91C59278C0014B3AA /* BZAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BZAppDelegate.h; sourceTree = "<group>"; };
+		CE02FAEA1C59278C0014B3AA /* BZAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BZAppDelegate.m; sourceTree = "<group>"; };
+		CE02FAEC1C59278C0014B3AA /* BZMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BZMainViewController.h; sourceTree = "<group>"; };
+		CE02FAED1C59278C0014B3AA /* BZMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BZMainViewController.m; sourceTree = "<group>"; };
 		CE02FAF31C59278C0014B3AA /* TestTaskBZ.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TestTaskBZ.xcdatamodel; sourceTree = "<group>"; };
 		CE02FAF51C59278C0014B3AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CE02FAF81C59278C0014B3AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE02FAFA1C59278C0014B3AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE02FAFF1C59278C0014B3AA /* TestTaskBZTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestTaskBZTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE02FB031C59278C0014B3AA /* TestTaskBZTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestTaskBZTests.m; sourceTree = "<group>"; };
@@ -53,6 +62,23 @@
 		CE02FB0A1C59278C0014B3AA /* TestTaskBZUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestTaskBZUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE02FB0E1C59278C0014B3AA /* TestTaskBZUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestTaskBZUITests.m; sourceTree = "<group>"; };
 		CE02FB101C59278C0014B3AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE02FB371C593EE10014B3AA /* BZCategory+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BZCategory+CoreDataProperties.h"; sourceTree = "<group>"; };
+		CE02FB381C593EE10014B3AA /* BZCategory+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BZCategory+CoreDataProperties.m"; sourceTree = "<group>"; };
+		CE02FB391C593EE10014B3AA /* BZCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BZCategory.h; sourceTree = "<group>"; };
+		CE02FB3A1C593EE10014B3AA /* BZCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BZCategory.m; sourceTree = "<group>"; };
+		CE02FB3D1C593EE10014B3AA /* BZQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BZQuestion.h; sourceTree = "<group>"; };
+		CE02FB3E1C593EE10014B3AA /* BZQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BZQuestion.m; sourceTree = "<group>"; };
+		CE02FB451C59625A0014B3AA /* TestTaskBZ.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = TestTaskBZ.sqlite; sourceTree = "<group>"; };
+		CE0642321C5E1F5300611B4F /* BZUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BZUtils.h; sourceTree = "<group>"; };
+		CE0642331C5E1F5300611B4F /* BZUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BZUtils.m; sourceTree = "<group>"; };
+		CE83B5BB1C5CB799008A798E /* BZTableHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BZTableHeader.h; sourceTree = "<group>"; };
+		CE83B5BC1C5CB799008A798E /* BZTableHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BZTableHeader.m; sourceTree = "<group>"; };
+		CE83B5C11C5D5EEA008A798E /* BZQuestion+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BZQuestion+CoreDataProperties.h"; sourceTree = "<group>"; };
+		CE83B5C21C5D5EEA008A798E /* BZQuestion+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BZQuestion+CoreDataProperties.m"; sourceTree = "<group>"; };
+		CEBE8DF01C5A79C800130D8C /* BZMenuCellCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BZMenuCellCollectionViewCell.h; sourceTree = "<group>"; };
+		CEBE8DF11C5A79C800130D8C /* BZMenuCellCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BZMenuCellCollectionViewCell.m; sourceTree = "<group>"; };
+		CEBE8DF31C5ABB2B00130D8C /* BZTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BZTableCell.h; sourceTree = "<group>"; };
+		CEBE8DF41C5ABB2B00130D8C /* BZTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BZTableCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4E01C6E13A0EEA2EBC68CA9 /* libPods-TestTaskBZ.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +107,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C2C5BE148C712047C3C3EB81 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5821AFB1D5AC421E2B8741AA /* Pods-TestTaskBZ.debug.xcconfig */,
+				2EEF423A0A86E4B56175DA6D /* Pods-TestTaskBZ.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CE02FADA1C59278C0014B3AA = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +123,8 @@
 				CE02FB021C59278C0014B3AA /* TestTaskBZTests */,
 				CE02FB0D1C59278C0014B3AA /* TestTaskBZUITests */,
 				CE02FAE41C59278C0014B3AA /* Products */,
+				C2C5BE148C712047C3C3EB81 /* Pods */,
+				DFBC91D56DD5422987AFF371 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,16 +141,17 @@
 		CE02FAE51C59278C0014B3AA /* TestTaskBZ */ = {
 			isa = PBXGroup;
 			children = (
-				CE02FAE91C59278C0014B3AA /* AppDelegate.h */,
-				CE02FAEA1C59278C0014B3AA /* AppDelegate.m */,
-				CE02FAEC1C59278C0014B3AA /* ViewController.h */,
-				CE02FAED1C59278C0014B3AA /* ViewController.m */,
-				CE02FAEF1C59278C0014B3AA /* Main.storyboard */,
+				CE0642371C5E548100611B4F /* UI */,
+				CE0642361C5E547100611B4F /* Models */,
+				CE02FAE91C59278C0014B3AA /* BZAppDelegate.h */,
+				CE02FAEA1C59278C0014B3AA /* BZAppDelegate.m */,
+				CE02FB451C59625A0014B3AA /* TestTaskBZ.sqlite */,
 				CE02FAF51C59278C0014B3AA /* Assets.xcassets */,
-				CE02FAF71C59278C0014B3AA /* LaunchScreen.storyboard */,
 				CE02FAFA1C59278C0014B3AA /* Info.plist */,
 				CE02FAF21C59278C0014B3AA /* TestTaskBZ.xcdatamodeld */,
 				CE02FAE61C59278C0014B3AA /* Supporting Files */,
+				CE0642321C5E1F5300611B4F /* BZUtils.h */,
+				CE0642331C5E1F5300611B4F /* BZUtils.m */,
 			);
 			path = TestTaskBZ;
 			sourceTree = "<group>";
@@ -143,6 +182,92 @@
 			path = TestTaskBZUITests;
 			sourceTree = "<group>";
 		};
+		CE02FB431C593F360014B3AA /* BZCategory */ = {
+			isa = PBXGroup;
+			children = (
+				CE02FB371C593EE10014B3AA /* BZCategory+CoreDataProperties.h */,
+				CE02FB381C593EE10014B3AA /* BZCategory+CoreDataProperties.m */,
+				CE02FB391C593EE10014B3AA /* BZCategory.h */,
+				CE02FB3A1C593EE10014B3AA /* BZCategory.m */,
+			);
+			name = BZCategory;
+			sourceTree = "<group>";
+		};
+		CE02FB441C593F4A0014B3AA /* BZQuestion */ = {
+			isa = PBXGroup;
+			children = (
+				CE02FB3D1C593EE10014B3AA /* BZQuestion.h */,
+				CE02FB3E1C593EE10014B3AA /* BZQuestion.m */,
+				CE83B5C11C5D5EEA008A798E /* BZQuestion+CoreDataProperties.h */,
+				CE83B5C21C5D5EEA008A798E /* BZQuestion+CoreDataProperties.m */,
+			);
+			name = BZQuestion;
+			sourceTree = "<group>";
+		};
+		CE0642361C5E547100611B4F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CE02FB431C593F360014B3AA /* BZCategory */,
+				CE02FB441C593F4A0014B3AA /* BZQuestion */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		CE0642371C5E548100611B4F /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				CE0642381C5E54F800611B4F /* BZMainViewController */,
+				CE0642391C5E550400611B4F /* BZMenuCellCollectionViewCell */,
+				CE06423A1C5E551600611B4F /* BZTableCell */,
+				CE06423B1C5E552500611B4F /* BZTableHeader */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		CE0642381C5E54F800611B4F /* BZMainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CE02FAEC1C59278C0014B3AA /* BZMainViewController.h */,
+				CE02FAED1C59278C0014B3AA /* BZMainViewController.m */,
+			);
+			name = BZMainViewController;
+			sourceTree = "<group>";
+		};
+		CE0642391C5E550400611B4F /* BZMenuCellCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				CEBE8DF01C5A79C800130D8C /* BZMenuCellCollectionViewCell.h */,
+				CEBE8DF11C5A79C800130D8C /* BZMenuCellCollectionViewCell.m */,
+			);
+			name = BZMenuCellCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		CE06423A1C5E551600611B4F /* BZTableCell */ = {
+			isa = PBXGroup;
+			children = (
+				CEBE8DF31C5ABB2B00130D8C /* BZTableCell.h */,
+				CEBE8DF41C5ABB2B00130D8C /* BZTableCell.m */,
+			);
+			name = BZTableCell;
+			sourceTree = "<group>";
+		};
+		CE06423B1C5E552500611B4F /* BZTableHeader */ = {
+			isa = PBXGroup;
+			children = (
+				CE83B5BB1C5CB799008A798E /* BZTableHeader.h */,
+				CE83B5BC1C5CB799008A798E /* BZTableHeader.m */,
+			);
+			name = BZTableHeader;
+			sourceTree = "<group>";
+		};
+		DFBC91D56DD5422987AFF371 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C56F797071631252F104FEAE /* libPods-TestTaskBZ.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -150,9 +275,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE02FB131C59278C0014B3AA /* Build configuration list for PBXNativeTarget "TestTaskBZ" */;
 			buildPhases = (
+				DE3E1C54453FADEC98E854F8 /* Check Pods Manifest.lock */,
 				CE02FADF1C59278C0014B3AA /* Sources */,
 				CE02FAE01C59278C0014B3AA /* Frameworks */,
 				CE02FAE11C59278C0014B3AA /* Resources */,
+				4BE90C82579C23841AA7EFD5 /* Embed Pods Frameworks */,
+				F9F4F98B6308FFEDB3E2E198 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -249,9 +377,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE02FAF91C59278C0014B3AA /* LaunchScreen.storyboard in Resources */,
+				CE02FB461C59625A0014B3AA /* TestTaskBZ.sqlite in Resources */,
 				CE02FAF61C59278C0014B3AA /* Assets.xcassets in Resources */,
-				CE02FAF11C59278C0014B3AA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,15 +398,71 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4BE90C82579C23841AA7EFD5 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestTaskBZ/Pods-TestTaskBZ-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE3E1C54453FADEC98E854F8 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F9F4F98B6308FFEDB3E2E198 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestTaskBZ/Pods-TestTaskBZ-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CE02FADF1C59278C0014B3AA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE02FAEE1C59278C0014B3AA /* ViewController.m in Sources */,
-				CE02FAEB1C59278C0014B3AA /* AppDelegate.m in Sources */,
+				CE02FAEE1C59278C0014B3AA /* BZMainViewController.m in Sources */,
+				CEBE8DF51C5ABB2B00130D8C /* BZTableCell.m in Sources */,
+				CE83B5BD1C5CB799008A798E /* BZTableHeader.m in Sources */,
+				CE83B5C31C5D5EEA008A798E /* BZQuestion+CoreDataProperties.m in Sources */,
+				CE02FAEB1C59278C0014B3AA /* BZAppDelegate.m in Sources */,
 				CE02FAF41C59278C0014B3AA /* TestTaskBZ.xcdatamodeld in Sources */,
+				CE0642341C5E1F5300611B4F /* BZUtils.m in Sources */,
+				CE02FB421C593EE10014B3AA /* BZQuestion.m in Sources */,
+				CEBE8DF21C5A79C800130D8C /* BZMenuCellCollectionViewCell.m in Sources */,
+				CE02FB3F1C593EE10014B3AA /* BZCategory+CoreDataProperties.m in Sources */,
 				CE02FAE81C59278C0014B3AA /* main.m in Sources */,
+				CE02FB401C593EE10014B3AA /* BZCategory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,25 +496,6 @@
 			targetProxy = CE02FB0B1C59278C0014B3AA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		CE02FAEF1C59278C0014B3AA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CE02FAF01C59278C0014B3AA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		CE02FAF71C59278C0014B3AA /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CE02FAF81C59278C0014B3AA /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		CE02FB111C59278C0014B3AA /* Debug */ = {
@@ -418,9 +582,12 @@
 		};
 		CE02FB141C59278C0014B3AA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5821AFB1D5AC421E2B8741AA /* Pods-TestTaskBZ.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = TestTaskBZ/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = BZ.TestTaskBZ;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -429,9 +596,12 @@
 		};
 		CE02FB151C59278C0014B3AA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EEF423A0A86E4B56175DA6D /* Pods-TestTaskBZ.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = TestTaskBZ/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = BZ.TestTaskBZ;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -505,6 +675,7 @@
 				CE02FB151C59278C0014B3AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE02FB161C59278C0014B3AA /* Build configuration list for PBXNativeTarget "TestTaskBZTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +684,7 @@
 				CE02FB181C59278C0014B3AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE02FB191C59278C0014B3AA /* Build configuration list for PBXNativeTarget "TestTaskBZUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +693,7 @@
 				CE02FB1B1C59278C0014B3AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

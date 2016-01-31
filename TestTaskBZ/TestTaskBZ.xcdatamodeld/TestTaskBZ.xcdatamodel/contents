@@ -1,4 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="Test1.xcdatamodel" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <elements/>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15C50" minimumToolsVersion="Automatic">
+    <entity name="BZCategory" representedClassName="BZCategory" syncable="YES">
+        <attribute name="categoryName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="questions" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="BZQuestion" inverseName="category" inverseEntity="BZQuestion" syncable="YES"/>
+    </entity>
+    <entity name="BZQuestion" representedClassName="BZQuestion" syncable="YES">
+        <attribute name="backgroundImage" optional="YES" transient="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="questionText" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="category" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BZCategory" inverseName="questions" inverseEntity="BZCategory" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="BZCategory" positionX="-252" positionY="-0" width="128" height="73"/>
+        <element name="BZQuestion" positionX="-54" positionY="0" width="128" height="90"/>
+    </elements>
 </model>

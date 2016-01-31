@@ -1,0 +1,20 @@
+PODS:
+  - CHTCollectionViewWaterfallLayout (0.9.2)
+  - MagicalRecord (2.3.2):
+    - MagicalRecord/Core (= 2.3.2)
+  - MagicalRecord/Core (2.3.2)
+  - Masonry (0.6.4)
+
+DEPENDENCIES:
+  - CHTCollectionViewWaterfallLayout
+  - MagicalRecord
+  - Masonry
+
+SPEC CHECKSUMS:
+  CHTCollectionViewWaterfallLayout: 43232febcb3e4d3985cd758718cbe499b21b822f
+  MagicalRecord: 53bed74b4323b930992a725be713e53b37d19755
+  Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
+
+PODFILE CHECKSUM: bb4ff804580cc2feb8a154f7c1c453ab27382c27
+
+COCOAPODS: 1.0.0.beta.2
