@@ -261,7 +261,6 @@ static NSString* headerIdentifier = @"HEADER_IDENTIFIER";
     if (self.currentChosedButton != nil) text = self.currentChosedButton.titleLabel.text;
     NSArray* questions =  [self.dictionaryWithCategoriesTitlesAndQuestions objectForKey:text];
     if ([questions count] < indexPath.row + 1) return cell;
-    imageView.image = [self backgroundImageForNumber:[((BZQuestion*)[questions objectAtIndex:indexPath.row]).backgroundImage integerValue]];
     label.text = ((BZQuestion*)[questions objectAtIndex:indexPath.row]).questionText;
     NSLayoutConstraint *centerXLabel = [NSLayoutConstraint constraintWithItem:label attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:cell.contentView attribute:NSLayoutAttributeCenterX multiplier:1 constant:0];
     [cell.contentView addConstraint:centerXLabel];
@@ -269,6 +268,8 @@ static NSString* headerIdentifier = @"HEADER_IDENTIFIER";
     NSDictionary* metrics = @{@"cellLabelTopPadding":[NSNumber numberWithInteger:cellLabelTopPadding], @"cellLabelBottomPadding": [NSNumber numberWithInteger:cellLabelBottomPadding], @"cellButtonBottomPadding" : [NSNumber numberWithInteger:cellButtonBottomPadding]};
     [cell.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-cellLabelTopPadding-[label]-cellLabelBottomPadding-[addButton]-cellButtonBottomPadding-|"  options:NSLayoutFormatAlignAllCenterX metrics:metrics views:views2]];
      NSLayoutConstraint *widthConstraint = [NSLayoutConstraint constraintWithItem:label attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:cell.contentView attribute:NSLayoutAttributeWidth multiplier:0 constant:contentMaxWidth];
+    UIImage* image =  [self backgroundImageForNumber:[((BZQuestion*)[questions objectAtIndex:indexPath.row]).backgroundImage integerValue]];
+    imageView.image = [image resizableImageWithCapInsets:UIEdgeInsetsZero resizingMode:UIImageResizingModeTile];
     [label addConstraint:widthConstraint];
     self.tableCell = cell;  // для тестов
     return cell;
